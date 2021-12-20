@@ -1,0 +1,212 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #1e90ff;
+  --white: #ffffff;
+  /* fonte */
+
+    /*Fairplex Narrow OT Med*/
+  --brod: fairplex-narrow, serif;
+
+
+  }
+  /* fonte */
+
+/*
+      Fairplex Narrow OT Bold
+      font-family: fairplex-narrow, serif;
+      font-weight: 700;
+      font-style: normal;
+
+      Fairplex Narrow OT Book Italic
+      font-family: fairplex-narrow, serif;
+      font-weight: 400;
+      font-style: italic;
+
+      Fairplex Narrow OT Med Italic
+      font-family: fairplex-narrow, serif;
+      font-weight: 500;
+      font-style: italic;
+
+      Fairplex Narrow OT Bold Italic
+      font-family: fairplex-narrow, serif;
+      font-weight: 700;
+      font-style: italic;
+
+      Fairplex Narrow OT Book
+      font-family: fairplex-narrow, serif;
+      font-weight: 400;
+      font-style: normal;
+
+      Fairplex Narrow OT Med
+      font-family: fairplex-narrow, serif;
+      font-weight: 500;
+      font-style: normal;
+*/
+
+  /*  320px — 480px: Mobile devices.
+    481px — 768px: iPads, Tablets.
+    769px — 1024px: Small screens, laptops.
+    1025px — 1200px: Desktops, large screens.
+    1201px and more — Extra large screens, TV. */
+
+/* __________ Mobile First deign start __________ */
+@media only screen and (max-width: 480px){
+
+html {
+  padding: 0px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  padding: 0px;
+  margin: 0;
+}
+
+
+/* __________ Mobile First deign start ""bugermenu"" __________ */
+
+.krydsindex img {
+  position: absolute;
+  color: white;
+  /*background: red;*/
+  width: 10vw;
+  margin-left: 84vw;
+  margin-top: 2.2vw;
+  z-index: 8;
+}
+
+
+.stenbaggrund img {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 140vh;
+
+}
+
+.menupunkternebuger {
+  position: absolute;
+  z-index: 7;
+  text-align: center;
+  margin-top: 10vw;
+}
+
+.menupunkternebuger {
+  background-image: url("../images/grasten.jpg");
+  height: 100%;
+    width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 4
+}
+
+
+.Underpunkteriprodukter {
+  background-image: url("../images/grastenkopi.jpg");
+    height: 100%;
+    width: 100vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5
+}
+
+.Underpunkteriomjolly {
+  background-image: url("../images/grastenkopi.jpg");
+    height: 100%;
+    width: 100vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5
+}
+
+
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--brod);
+  font-size: 5vw;;
+  text-align: center;
+
+}
+
+.sub {
+  text-align: center;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+
+/* -----  Styling af menupunkterne i Burgermenuen ----- */
+
+details summary {
+  color: var(--white);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--brod);
+  text-align: center;
+  padding: 6vw;
+  font-size: 6vw;
+  z-index: 10;
+}
+
+summary {
+  list-style-type: none;
+  z-index: 10;
+  font-family: fairplex-narrow, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 8em;
+}
+
+.Julekalender a {
+  list-style-type: none;
+  z-index: 10;
+  font-family: fairplex-narrow, serif;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 6vw;
+}
+
+.sub a {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+.omJolly {
+  margin-top: 5vw;
+}
+
+.Julekalender {
+  margin-top: 5vw;
+}
+
+/* --- Fjerner de trekanteede ikoner --- */
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.liste {
+  list-style: none;
+}

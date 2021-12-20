@@ -1,0 +1,506 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --brun: #481A00;
+  --brun2: #210100;
+  --white: #ffffff;
+  --gra: #949599;
+  --gra2: #b3b3b3;
+
+  /* fonte */
+
+    /*Fairplex Narrow OT Med*/
+  --brod: fairplex-narrow, serif;
+
+
+  }
+  /* fonte */
+  /*
+        Fairplex Narrow OT Bold
+        font-family: fairplex-narrow, serif;
+        font-weight: 700;
+        font-style: normal;
+
+        Fairplex Narrow OT Bold Italic
+        font-family: fairplex-narrow, serif;
+        font-weight: 700;
+        font-style: italic;
+
+        Fairplex Narrow OT Book
+        font-family: fairplex-narrow, serif;
+        font-weight: 400;
+        font-style: normal;
+
+        Fairplex Narrow OT Book Italic
+        font-family: fairplex-narrow, serif;
+        font-weight: 400;
+        font-style: italic;
+
+        Fairplex Narrow OT Med
+        font-family: fairplex-narrow, serif;
+        font-weight: 500;
+        font-style: normal;
+
+        Fairplex Narrow OT Med Italic
+        font-family: fairplex-narrow, serif;
+        font-weight: 500;
+        font-style: italic;
+
+  */
+
+    /*  320px — 480px: Mobile devices.
+      481px — 768px: iPads, Tablets.
+      769px — 1024px: Small screens, laptops.
+      1025px — 1200px: Desktops, large screens.
+      1201px and more — Extra large screens, TV. */
+
+/* __________ Mobile First deign start __________ */
+@media only screen and (max-width: 480px){
+
+  html {
+    padding: 0px;
+    margin: 0;
+    height: 100%;
+  }
+
+  * {
+    padding: 0px;
+    margin: 0;
+  }
+
+  h2 {
+    position: absolute;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--brod);
+    text-align: center;
+  }
+
+  p {
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--brod);
+    text-align: center;
+  }
+
+
+/* ---- Skjul Web menuen  ----  */
+
+.navmenupunkter{
+  display: none;
+}
+
+/* ---- Vis Burgermenuen i stedet for  ----  */
+.burgermenulogo img {
+  position: absolute;
+  /*background: red;*/
+  width: 10vw;
+  margin-left: 84vw;
+  margin-top: 2.7vw;
+  z-index: 5;
+}
+
+
+/* ---- Logo i navigationsbaren  ----  */
+.logo img {
+  position: absolute;
+  /*background: #FFD9EC;*/
+  width: 20vw;
+  margin-top: 2.5vw;
+  z-index: 5;
+  margin-left: 4.5vw;
+}
+
+/* ---- sortebaggrund i navigationsbaren  ----  */
+.sort img {
+  position: relative;
+ height: 20vw;
+ top: 0;
+ left: 0;
+ z-index: 1;
+ width: 100vw;
+ height: 17vw;
+ opacity: 0.7;
+}
+
+/* ---- rødbaggrund  ---- */
+.rodbaggrund img {
+  margin-top: 0;
+  top: 0;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+position: absolute;
+opacity: 1;
+height: 155vw;
+
+
+}
+
+
+
+
+/* _________--------Section 1 ---------_____________ */
+
+
+.tekster1 h2 {
+  width: 80vw;
+  margin-top: 9vw;
+  margin-left: 10vw;
+  font-style: italic;
+  font-size: 8vw;
+}
+
+.tekster1 p {
+  width: 80vw;
+  margin-top: 35vw;
+  margin-left: 10vw;
+  font-style: normal;
+  font-size: 4vw;
+  color: var(--white);
+}
+
+/* _________Footer_____________ */
+
+.baggrundfootermobile img {
+  width: 100vw;
+  position: absolute;
+  margin-top: 119vw;
+  z-index: 17;
+
+
+}
+
+.baggrundfooter img {
+  display: none;
+}
+
+
+.tekster {
+  z-index: 18;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--brod);
+  text-align: center;
+}
+
+
+
+.jolly h2 {
+  color: var(--white);
+  width: 90vw;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 7vw;
+  margin-left: 5vw;
+  margin-top: 146vw;
+}
+
+.jolly p {
+  color: var(--white);
+  font-weight: 500;
+  font-style: normal;
+  width: 90vw;
+  font-size: 5vw;
+  margin-left: 5vw;
+  margin-top: 159vw;
+}
+
+.support h2 {
+  color: var(--white);
+  font-style: normal;
+  width: 90vw;
+  font-weight: 500;
+  font-size: 7vw;
+  margin-left: 5vw;
+  margin-top: 181vw;
+}
+
+.support p {
+  color: var(--white);
+  font-weight: 500;
+  font-style: normal;
+  width: 90vw;
+  font-size: 5vw;
+  margin-left: 5vw;
+  margin-top: 194vw;
+}
+.some img {
+  position: absolute;
+  width: 15vw;
+  margin-top: 226vw;
+  z-index: 17; }
+
+.insta {
+  margin-left: 32vw;
+}
+.facebook {
+  margin-left: 55vw;
+}
+
+.logofooter img {
+  position: absolute;
+  width: 30vw;
+  margin-top: 256vw;
+  margin-left: 35vw;
+  z-index: 17; }
+
+
+
+} /* slut på Mobil First design ____ end tag */
+
+
+/*  320px — 480px: Mobile devices.
+  481px — 768px: iPads, Tablets.
+  769px — 1024px: Small screens, laptops.
+  1025px — 1200px: Desktops, large screens.
+  1201px and more — Extra large screens, TV. */
+
+
+  @media screen and (min-width: 481px){
+
+    html {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    h2 {
+      position: absolute;
+      color: var(--white);
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--brod);
+      text-align: center;
+    }
+
+    p {
+      position: absolute;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--brod);
+      text-align: center;
+    }
+
+
+    /* ---- Skjul burger menuen  ----  */
+
+    .burgermenulogo{
+      display: none;
+    }
+
+    /* ---- Vis menuen i stedet for  ----  */
+    .navmenupunkter  img {
+      position: fixed;
+      /*background: red;*/
+      z-index: 20;
+
+    }
+
+
+    /* ---- Logo i navigationsbaren  ----  */
+    .logo img {
+      position: fixed;
+      /*background: #FFD9EC;*/
+      width: 10vw;
+      margin-top: 2.5vw;
+      z-index: 20;
+      margin-left: 4.5vw;
+    }
+
+    /* ---- sortebaggrund i navigationsbaren  ----  */
+    .sort img {
+      position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 15;
+     width: 100vw;
+     height: 10vw;
+     opacity: 0.7;
+    }
+
+
+
+
+
+    /* --------------- Menupunkter --------------- */
+    a {
+      text-decoration: none;
+      color: var(--white);
+      font-family: var(--brod);
+    }
+
+
+
+    .navmenupunkter a {
+      color: var(--white);
+      font-size: 2.3vw;
+      top: 4vw;
+      border: none;
+      background-color: transparent;
+      font-family: var(--brod);
+      font-weight: 700;
+      font-style: normal;
+    }
+      .produkter {
+        margin-left: 50vw;
+        position: fixed;
+        z-index: 20;  }
+
+
+      .Kalender {
+        margin-left: 63.5vw;
+        position: fixed;
+        display: inline-block;
+        z-index: 20;  }
+
+      .OmJolly {
+        margin-left: 85vw;
+        position: fixed;
+        display: inline-block;
+        z-index: 20;  }
+
+  /* ---- rødbaggrund  ---- */
+        .rodbaggrund img {
+          margin-top: 0;
+          top: 0;
+          width: 100vw;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        position: absolute;
+        opacity: 1;
+        height: 65vw;
+
+
+        }
+
+/* _________--------Section 1 ---------_____________ */
+
+
+
+
+.tekster1 h2 {
+  width: 80vw;
+  margin-top: 11vw;
+  margin-left: 10vw;
+  font-style: italic;
+  font-size: 8vw;
+}
+
+.tekster1 p {
+  width: 80vw;
+  margin-top: 38vw;
+  margin-left: 10vw;
+  font-style: normal;
+  font-size: 4vw;
+  color: var(--white);
+}
+
+
+
+  /*_________Footer__Tablet___________*/
+
+  .baggrundfootermobile img {
+    display: none;
+  }
+
+  .baggrundfooter img {
+    width: 100vw;
+    position: absolute;
+    margin-top: 63vw;
+    height: 40vw;
+  }
+
+
+
+    .tekster {
+      z-index: 18;
+      position: absolute;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--brod);
+      text-align: center;
+
+    }
+
+
+
+    .jolly h2 {
+      color: var(--white);
+      width: 45vw;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 3vw;
+      margin-left: 7vw;
+      margin-top: 70vw;
+    }
+
+    .jolly p {
+      color: var(--white);
+      font-weight: 500;
+      font-style: normal;
+      width: 45vw;
+      font-size: 2vw;
+      margin-left: 7vw;
+      margin-top: 76vw;
+    }
+
+    .support h2 {
+      color: var(--white);
+      font-style: normal;
+      width: 45vw;
+      font-weight: 500;
+      font-size: 3vw;
+      margin-left: 7vw;
+      margin-top: 85vw;
+    }
+
+    .support p {
+      color: var(--white);
+      font-weight: 500;
+      font-style: normal;
+      width: 45vw;
+      font-size: 2vw;
+      margin-left: 7vw;
+      margin-top: 90vw;
+    }
+    .some img {
+      position: absolute;
+      width: 8vw;
+      margin-top: 70vw;
+      z-index: 17; }
+
+    .insta {
+      margin-left: 62vw;
+    }
+    .facebook {
+      margin-left: 74vw;
+    }
+
+    .logofooter img {
+      position: absolute;
+      width: 30vw;
+      margin-top: 80vw;
+      margin-left: 57vw;
+      z-index: 17; }
+
+
+
+    } /* slut på web design størelse ____ end tag */
+
+
+
+/* CSS slut */

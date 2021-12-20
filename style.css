@@ -1,0 +1,1402 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --brun: #481A00;
+  --brun2: #210100;
+  --white: #ffffff;
+  --gra: #949599;
+  --gra2: #b3b3b3;
+  /* fonte */
+
+    /*Fairplex Narrow OT Med*/
+  --brod: fairplex-narrow, serif;
+
+
+  }
+  /* fonte */
+  /*
+        Fairplex Narrow OT Bold
+        font-family: fairplex-narrow, serif;
+        font-weight: 700;
+        font-style: normal;
+
+        Fairplex Narrow OT Bold Italic
+        font-family: fairplex-narrow, serif;
+        font-weight: 700;
+        font-style: italic;
+
+        Fairplex Narrow OT Book
+        font-family: fairplex-narrow, serif;
+        font-weight: 400;
+        font-style: normal;
+
+        Fairplex Narrow OT Book Italic
+        font-family: fairplex-narrow, serif;
+        font-weight: 400;
+        font-style: italic;
+
+        Fairplex Narrow OT Med
+        font-family: fairplex-narrow, serif;
+        font-weight: 500;
+        font-style: normal;
+
+        Fairplex Narrow OT Med Italic
+        font-family: fairplex-narrow, serif;
+        font-weight: 500;
+        font-style: italic;
+
+  */
+
+    /*  320px — 480px: Mobile devices.
+      481px — 768px: iPads, Tablets.
+      769px — 1024px: Small screens, laptops.
+      1025px — 1200px: Desktops, large screens.
+      1201px and more — Extra large screens, TV. */
+
+/* __________ Mobile First deign start __________ */
+@media only screen and (max-width: 480px){
+
+  html {
+    padding: 0px;
+    margin: 0;
+    height: 100%;
+  }
+
+  * {
+    padding: 0px;
+    margin: 0;
+  }
+
+  h2 {
+    position: absolute;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--brod);
+    text-align: center;
+  }
+
+  p {
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--brod);
+    text-align: center;
+  }
+
+
+/* ---- Skjul Web menuen  ----  */
+
+.navmenupunkter{
+  display: none;
+}
+
+/* ---- Vis Burgermenuen i stedet for  ----  */
+.burgermenulogo img {
+  position: absolute;
+  /*background: red;*/
+  width: 10vw;
+  margin-left: 84vw;
+  margin-top: 2.7vw;
+  z-index: 5;
+}
+
+
+/* ---- Logo i navigationsbaren  ----  */
+.logo img {
+  position: absolute;
+  /*background: #FFD9EC;*/
+  width: 20vw;
+  margin-top: 2.5vw;
+  z-index: 5;
+  margin-left: 4.5vw;
+}
+
+/* ---- sortebaggrund i navigationsbaren  ----  */
+.sort img {
+  position: relative;
+ height: 20vw;
+ top: 0;
+ left: 0;
+ z-index: 1;
+ width: 100vw;
+ height: 17vw;
+ opacity: 0.7;
+}
+
+/* ---- Video Styling  ----  */
+.Video video {
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+
+}
+
+/* ----____ sekstion 1 med gammelt papirbaggrund______ ----  */
+.papir img {
+  width: 100vw;
+  height: 194vw;
+  margin-top: 37vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.papirweb img {
+  display: none;
+}
+
+.billede1 img {
+  width: 50vw;
+  margin-top: 60vw;
+  text-align: center;
+  margin-left: 24vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.teksterne {
+  z-index: 3;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--brod);
+  text-align: center;
+}
+
+.tekst1 {
+  color: black;
+  width: 90vw;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 125vw;
+  margin-left: 5vw;
+  font-size: 7vw;
+
+}
+
+.brodtekst1 {
+  color: var(--brun);
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 140vw;
+  margin-left: 15vw;
+  width: 72vw;
+  font-size: 5vw;
+}
+
+.knap1 img {
+  z-index: 4;
+  position: absolute;
+  margin-top: 200vw;
+  margin-left: 20vw;
+  width: 60vw;
+}
+
+/* ----____ sekstion 2 med stenbaggrund______ ----  */
+
+.stenbaggrund img {
+  width: 100vw;
+  height: 210vw;
+  margin-top: 231vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.stenbaggrundweb img {
+  display: none;
+}
+
+.artikelpic1 img {
+  width: 65vw;
+  margin-top: 260vw;
+  text-align: center;
+  margin-left: 17.5vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.artikelpic2 img {
+  width: 65vw;
+  margin-top: 345vw;
+  text-align: center;
+  margin-left: 17.5vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.teaserteksterne h2 {
+  z-index: 4;
+  color: var(--brun2);
+  font-family: var(--brod);
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.teaser1{
+  margin-top: 315vw;
+  margin-left: 20vw;
+  font-size: 5.2vw;
+}
+
+.teaser2{
+  margin-top: 400vw;
+  margin-left: 20vw;
+  font-size: 6vw;
+}
+
+.pil img {
+  margin-left: 66vw;
+  z-index: 10;
+  position: absolute;
+}
+
+.Rom {
+  margin-top: 314vw;
+  z-index: 10;
+  position: absolute;
+  width: 15vw;
+}
+
+.his {
+  margin-top: 399vw;
+  z-index: 10;
+  position: absolute;
+  width: 15vw;
+}
+/* ----____ sekstion 3 med sortbaggrund______ ----  */
+
+.sortebaggrund img {
+  width: 100vw;
+  height: 210vw;
+  margin-top: 440vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.sortebaggrundweb img {
+  display: none;
+}
+
+.udvalgtekst {
+  color: var(--white);
+  font-family: fairplex-narrow, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10vw;
+  text-align: center;
+  z-index: 4;
+  margin-left: 25vw;
+  margin-top: 460vw;
+  position: absolute;
+}
+
+.brodtekst3 {
+  color: var(--gra);
+  font-family: fairplex-narrow, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 7vw;
+  text-align: center;
+  width: 70vw;
+  z-index: 4;
+  margin-left: 15vw;
+  margin-top: 480vw;
+  position: absolute;
+}
+
+/*
+.daaseudvalg img {
+  margin-top: 520vw;
+  margin-left: 23.5vw;
+  width: 55vw;
+  z-index: 10;
+  position: absolute;
+}
+
+.graapil1 img {
+  width: 15vw;
+  z-index: 9;
+  margin-left: 80vw;
+  margin-top: 560vw;
+  position: absolute;
+}
+
+
+
+
+
+ Slideshow box med slider og billedere
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index: 18;
+  margin-top: 520vw;
+}
+
+.slideshow img {
+  width: 55vw;
+  margin-left: 24vw;
+  z-index: 10;
+  position: absolute;
+} */
+
+
+/* tilbage og frem buttons */
+.knapper img {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 560vw;
+  transition: 0.6s ease;
+  border-radius: 0 2px 3px 0;
+  user-select: none;
+
+}
+
+.prev{
+    width: 15vw;
+    margin-left: 6vw;
+    position: absolute;
+    z-index: 18;
+}
+
+.next{
+    width: 15vw;
+    margin-left: 79vw;
+    position: absolute;
+    z-index: 18;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+
+}
+
+.animationslide {
+  width: 55vw;
+  height: 100vw;
+  margin-left: 22.5vw;
+  position: absolute;
+  z-index: 14;
+  margin-top: 520vw;
+  animation: slide 30s infinite;
+}
+
+@keyframes slide {
+  0% {background-image: url("../images/roddaase.png");
+width: 55vw; }
+
+
+  20% {background-image: url("../images/gradase.png");  }
+
+  40% {background-image: url("../images/grondase.png");  }
+
+  60% {background-image: url("../images/orangedase.png");  }
+
+  80% {background-image: url("../images/orangelightdase.png");  }
+
+
+}
+
+
+
+/* _________Footer_____________ */
+
+.baggrundfootermobile img {
+  width: 100vw;
+  position: absolute;
+  margin-top: 645vw;
+  z-index: 17;
+
+
+}
+
+.baggrundfooter img {
+  display: none;
+}
+
+
+.tekster {
+  z-index: 18;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--brod);
+  text-align: center;
+}
+
+
+
+.jolly h2 {
+  color: var(--white);
+  width: 90vw;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 7vw;
+  margin-left: 5vw;
+  margin-top: 670vw;
+}
+
+.jolly p {
+  color: var(--white);
+  font-weight: 500;
+  font-style: normal;
+  width: 90vw;
+  font-size: 5vw;
+  margin-left: 5vw;
+  margin-top: 683vw;
+}
+
+.support h2 {
+  color: var(--white);
+  font-style: normal;
+  width: 90vw;
+  font-weight: 500;
+  font-size: 7vw;
+  margin-left: 5vw;
+  margin-top: 705vw;
+}
+
+.support p {
+  color: var(--white);
+  font-weight: 500;
+  font-style: normal;
+  width: 90vw;
+  font-size: 5vw;
+  margin-left: 5vw;
+  margin-top: 718vw;
+}
+.some img {
+  position: absolute;
+  width: 15vw;
+  margin-top: 750vw;
+  z-index: 17; }
+
+.insta {
+  margin-left: 32vw;
+}
+.facebook {
+  margin-left: 55vw;
+}
+
+.logofooter img {
+  position: absolute;
+  width: 30vw;
+  margin-top: 780vw;
+  margin-left: 35vw;
+  z-index: 17; }
+
+
+} /* slut på Mobil First design ____ end tag */
+
+
+
+/*  320px — 480px: Mobile devices.
+  481px — 768px: iPads, Tablets.
+  769px — 1024px: Small screens, laptops.
+  1025px — 1200px: Desktops, large screens.
+  1201px and more — Extra large screens, TV. */
+/* Responsive code start */
+@media screen and (min-width: 481px){
+
+  html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    position: absolute;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--brod);
+    text-align: center;
+  }
+
+  p {
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--brod);
+    text-align: center;
+  }
+
+
+  /* ---- Skjul burger menuen  ----  */
+
+  .burgermenulogo{
+    display: none;
+  }
+
+  /* ---- Vis menuen i stedet for  ----  */
+  .navmenupunkter  img {
+    position: fixed;
+    /*background: red;*/
+    z-index: 20;
+
+  }
+
+
+  /* ---- Logo i navigationsbaren  ----  */
+  .logo img {
+    position: fixed;
+    /*background: #FFD9EC;*/
+    width: 10vw;
+    margin-top: 2.5vw;
+    z-index: 20;
+    margin-left: 4.5vw;
+  }
+
+  /* ---- sortebaggrund i navigationsbaren  ----  */
+  .sort img {
+    position: fixed;
+
+   top: 0;
+   left: 0;
+   z-index: 15;
+   width: 100vw;
+   height: 10vw;
+   opacity: 0.7;
+  }
+
+
+
+  /* ---- Video Styling  ----  */
+  .Video video {
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+
+  }
+
+  /* --------------- Menupunkter --------------- */
+  a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--brod);
+  }
+
+
+
+
+      .navmenupunkter a {
+        color: var(--white);
+        font-size: 2.3vw;
+        top: 4vw;
+        border: none;
+        background-color: transparent;
+        font-family: var(--brod);
+        font-weight: 700;
+        font-style: normal;
+      }
+        .produkter {
+          margin-left: 50vw;
+          position: fixed;
+          z-index: 20;  }
+
+
+        .Kalender {
+          margin-left: 63.5vw;
+          position: fixed;
+          display: inline-block;
+          z-index: 20;  }
+
+        .OmJolly {
+          margin-left: 85vw;
+          position: fixed;
+          display: inline-block;
+          z-index: 20;  }
+
+
+/* ----____ sekstion 1 med gammelt papirbaggrund______ ----  */
+
+.papir img {
+  display: none;
+}
+
+.papirweb img {
+  width: 100vw;
+  margin-top: 56vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.billede1 img {
+  width: 30vw;
+  margin-top: 73vw;
+  text-align: center;
+  margin-left: 60vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.teksterne {
+  z-index: 3;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--brod);
+  text-align: center;
+}
+
+.tekst1 {
+  color: black;
+  width: 50vw;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 67vw;
+  margin-left: 6vw;
+  font-size: 3.5vw;
+
+}
+
+.brodtekst1 {
+  color: var(--brun);
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 76vw;
+  margin-left: 8vw;
+  width: 45vw;
+  font-size: 2.5vw;
+}
+
+.knap1 img {
+  z-index: 4;
+  position: absolute;
+  margin-top: 109vw;
+  margin-left: 18.5vw;
+  width: 23vw;
+}
+
+/* ----____ sekstion 2 med stenbaggrund______ ----  */
+
+.stenbaggrund img {
+  display: none;
+}
+
+.stenbaggrundweb img {
+
+  width: 100vw;
+
+  margin-top: 122vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.artikelpic1 img {
+  width: 30vw;
+  margin-top: 131vw;
+  text-align: center;
+  margin-left: 15vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.artikelpic2 img {
+  width: 30vw;
+  margin-top: 131vw;
+  text-align: center;
+  margin-left: 56vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.teaserteksterne h2 {
+  z-index: 4;
+  color: var(--brun2);
+  font-family: var(--brod);
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.teaser1{
+  margin-top: 157vw;
+  margin-left: 16vw;
+  font-size: 2.5vw;
+}
+
+.teaser2{
+  margin-top: 156.5vw;
+  margin-left: 58vw;
+  font-size: 2.9vw;
+}
+
+.pil img {
+
+  z-index: 10;
+  position: absolute;
+}
+
+.Rom {
+  margin-top: 156.2vw;
+  z-index: 10;
+  position: absolute;
+  width: 7vw;
+
+  margin-left: 38vw;
+}
+
+.his {
+  margin-top: 156.2vw;
+  z-index: 10;
+  position: absolute;
+  width: 7vw;
+  margin-left: 79vw;
+}
+
+
+/* ----____ sekstion 3 med sortbaggrund______ ----  */
+
+.sortebaggrundweb img {
+  width: 100vw;
+  height: 80vw;
+  margin-top: 170vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.sortebaggrund img {
+  display: none;
+}
+
+.udvalgtekst {
+  color: var(--white);
+  font-family: fairplex-narrow, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5vw;
+  text-align: center;
+  z-index: 4;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: 180vw;
+  position: absolute;
+}
+
+.brodtekst3 {
+  color: var(--gra);
+  font-family: fairplex-narrow, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 4vw;
+  text-align: center;
+  width: 70vw;
+  z-index: 4;
+  margin-left: 15vw;
+  margin-top: 190vw;
+  position: absolute;
+}
+
+.knapper img {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 217vw;
+  transition: 0.6s ease;
+  border-radius: 0 2px 3px 0;
+  user-select: none;
+
+}
+
+.prev{
+    width: 10vw;
+    margin-left: 10vw;
+    position: absolute;
+    z-index: 18;
+    opacity: 0.7;
+}
+
+.next{
+    width: 10vw;
+    margin-left: 80vw;
+    position: absolute;
+    z-index: 18;
+    opacity: 0.7;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+
+.animationslide {
+  width: 20vw;
+  height: 37vw;
+  margin-left: 40vw;
+  animation: slide 30s infinite;
+  position: absolute;
+  z-index: 14;
+  margin-top: 205vw;
+  background-repeat: no-repeat;
+  opacity: 1;
+
+
+}
+
+@keyframes slide {
+  0% {background-image: url("../images/roddaase.png");}
+
+  20% {background-image: url("../images/gradase.png");  }
+
+  40% {background-image: url("../images/grondase.png");  }
+
+  60% {background-image: url("../images/orangedase.png");  }
+
+  80% {background-image: url("../images/orangelightdase.png");  }
+
+}
+
+
+
+
+/*_________Footer__Tablet___________*/
+
+.baggrundfootermobile img {
+  display: none;
+}
+
+.baggrundfooter img {
+  width: 100vw;
+  position: absolute;
+  margin-top: 247vw;
+}
+
+
+
+  .tekster {
+    z-index: 18;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--brod);
+    text-align: center;
+
+  }
+
+
+
+  .jolly h2 {
+    color: var(--white);
+    width: 45vw;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 4vw;
+    margin-left: 10vw;
+    margin-top: 255vw;
+  }
+
+  .jolly p {
+    color: var(--white);
+    font-weight: 500;
+    font-style: normal;
+    width: 45vw;
+    font-size: 3vw;
+    margin-left: 10vw;
+    margin-top: 263vw;
+  }
+
+  .support h2 {
+    color: var(--white);
+    font-style: normal;
+    width: 45vw;
+    font-weight: 500;
+    font-size: 4vw;
+    margin-left: 10vw;
+    margin-top: 280vw;
+  }
+
+  .support p {
+    color: var(--white);
+    font-weight: 500;
+    font-style: normal;
+    width: 45vw;
+    font-size: 3vw;
+    margin-left: 10vw;
+    margin-top: 287vw;
+  }
+  .some img {
+    position: absolute;
+    width: 8vw;
+    margin-top: 261vw;
+    z-index: 17; }
+
+  .insta {
+    margin-left: 64vw;
+  }
+  .facebook {
+    margin-left: 76vw;
+  }
+
+  .logofooter img {
+    position: absolute;
+    width: 30vw;
+    margin-top: 280vw;
+    margin-left: 59vw;
+    z-index: 17; }
+
+
+
+  } /* slut på tablet design ____ end tag _______________*/
+
+
+  @media screen and (min-width: 1280px){
+
+    html {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    h2 {
+      position: absolute;
+      color: var(--white);
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--brod);
+      text-align: center;
+    }
+
+    p {
+      position: absolute;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--brod);
+      text-align: center;
+    }
+
+
+    /* ---- Skjul burger menuen  ----  */
+
+    .burgermenulogo{
+      display: none;
+    }
+
+    /* ---- Vis menuen i stedet for  ----  */
+    .navmenupunkter  img {
+      position: fixed;
+      /*background: red;*/
+      z-index: 20;
+
+    }
+
+
+    /* ---- Logo i navigationsbaren  ----  */
+    .logo img {
+      position: fixed;
+      /*background: #FFD9EC;*/
+      width: 10vw;
+      margin-top: 2.5vw;
+      z-index: 20;
+      margin-left: 4.5vw;
+    }
+
+    /* ---- sortebaggrund i navigationsbaren  ----  */
+    .sort img {
+      position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 15;
+     width: 100vw;
+     height: 10vw;
+     opacity: 0.7;
+    }
+
+
+
+    /* ---- Video Styling  ----  */
+    .Video video {
+      width: 100vw;
+      z-index: 1;
+      position: absolute;
+
+    }
+
+    /* --------------- Menupunkter --------------- */
+    a {
+      text-decoration: none;
+      color: var(--white);
+      font-family: var(--brod);
+    }
+
+
+
+
+        .navmenupunkter a {
+          color: var(--white);
+          font-size: 2.3vw;
+          top: 4vw;
+          border: none;
+          background-color: transparent;
+          font-family: var(--brod);
+          font-weight: 700;
+          font-style: normal;
+        }
+          .produkter {
+            margin-left: 50vw;
+            position: fixed;
+            z-index: 20;  }
+
+
+          .Kalender {
+            margin-left: 63.5vw;
+            position: fixed;
+            display: inline-block;
+            z-index: 20;  }
+
+          .OmJolly {
+            margin-left: 85vw;
+            position: fixed;
+            display: inline-block;
+            z-index: 20;  }
+
+
+  /* ----____ sekstion 1 med gammelt papirbaggrund______ ----  */
+
+  .papir img {
+    display: none;
+  }
+
+  .papirweb img {
+    width: 100vw;
+    margin-top: 56vw;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .billede1 img {
+    width: 25vw;
+    margin-top: 73vw;
+    text-align: center;
+    margin-left: 65vw;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .teksterne {
+    z-index: 3;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--brod);
+    text-align: center;
+  }
+
+  .tekst1 {
+    color: black;
+    width: 50vw;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 67vw;
+    margin-left: 6vw;
+    font-size: 3vw;
+
+  }
+
+  .brodtekst1 {
+    color: var(--brun);
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 76vw;
+    margin-left: 8vw;
+    width: 45vw;
+    font-size: 2vw;
+  }
+
+  .knap1 img {
+    z-index: 4;
+    position: absolute;
+    margin-top: 103vw;
+    margin-left: 18.5vw;
+    width: 23vw;
+  }
+
+  /* ----____ sekstion 2 med stenbaggrund______ ----  */
+
+  .stenbaggrund img {
+    display: none;
+  }
+
+  .stenbaggrundweb img {
+
+    width: 100vw;
+
+    margin-top: 122vw;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .artikelpic1 img {
+    width: 30vw;
+    margin-top: 131vw;
+    text-align: center;
+    margin-left: 15vw;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .artikelpic2 img {
+    width: 30vw;
+    margin-top: 131vw;
+    text-align: center;
+    margin-left: 56vw;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .teaserteksterne h2 {
+    z-index: 4;
+    color: var(--brun2);
+    font-family: var(--brod);
+    font-weight: 700;
+    font-style: normal;
+
+  }
+
+  .teaser1{
+    margin-top: 157vw;
+    margin-left: 16vw;
+    font-size: 2.5vw;
+  }
+
+  .teaser2{
+    margin-top: 156.5vw;
+    margin-left: 58vw;
+    font-size: 2.9vw;
+  }
+
+  .pil img {
+
+    z-index: 10;
+    position: absolute;
+  }
+
+  .Rom {
+    margin-top: 156.2vw;
+    z-index: 10;
+    position: absolute;
+    width: 7vw;
+
+    margin-left: 38vw;
+  }
+
+  .his {
+    margin-top: 156.2vw;
+    z-index: 10;
+    position: absolute;
+    width: 7vw;
+    margin-left: 79vw;
+  }
+
+
+  /* ----____ sekstion 3 med sortbaggrund______ ----  */
+
+  .sortebaggrundweb img {
+    width: 100vw;
+    height: 65vw;
+    margin-top: 170vw;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .sortebaggrund img {
+    display: none;
+  }
+
+  .udvalgtekst {
+    color: var(--white);
+    font-family: fairplex-narrow, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw;
+    text-align: center;
+    z-index: 4;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 180vw;
+    position: absolute;
+  }
+
+  .brodtekst3 {
+    color: var(--gra);
+    font-family: fairplex-narrow, serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 3vw;
+    text-align: center;
+    width: 70vw;
+    z-index: 4;
+    margin-left: 15vw;
+    margin-top: 186vw;
+    position: absolute;
+  }
+
+  .knapper img {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 209vw;
+    transition: 0.6s ease;
+    border-radius: 0 2px 3px 0;
+    user-select: none;
+
+  }
+
+  .prev{
+      width: 7vw;
+      margin-left: 20vw;
+      position: absolute;
+      z-index: 18;
+      opacity: 0.7;
+  }
+
+  .next{
+      width: 7vw;
+      margin-left: 72vw;
+      position: absolute;
+      z-index: 18;
+      opacity: 0.7;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    opacity: 1;
+  }
+
+  .animationslide {
+    width: 16vw;
+    height: 29vw;
+    margin-left: 42vw;
+    position: absolute;
+    z-index: 14;
+    margin-top: 198vw;
+    animation: slide 30s infinite;
+  }
+
+  @keyframes slide {
+    0% {background-image: url("../images/roddaase.png");
+   }
+
+
+    20% {background-image: url("../images/gradase.png");  }
+
+    40% {background-image: url("../images/grondase.png");  }
+
+    60% {background-image: url("../images/orangedase.png");  }
+
+    80% {background-image: url("../images/orangelightdase.png");  }
+
+
+  }
+
+
+
+
+  /*_________Footer__Tablet___________*/
+
+  .baggrundfootermobile img {
+    display: none;
+  }
+
+  .baggrundfooter img {
+    width: 100vw;
+    position: absolute;
+    margin-top: 233vw;
+    height: 40vw;
+  }
+
+
+
+    .tekster {
+      z-index: 18;
+      position: absolute;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--brod);
+      text-align: center;
+
+    }
+
+
+
+    .jolly h2 {
+      color: var(--white);
+      width: 45vw;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 3vw;
+      margin-left: 7vw;
+      margin-top: 240vw;
+    }
+
+    .jolly p {
+      color: var(--white);
+      font-weight: 500;
+      font-style: normal;
+      width: 45vw;
+      font-size: 2vw;
+      margin-left: 7vw;
+      margin-top: 246vw;
+    }
+
+    .support h2 {
+      color: var(--white);
+      font-style: normal;
+      width: 45vw;
+      font-weight: 500;
+      font-size: 3vw;
+      margin-left: 7vw;
+      margin-top: 255vw;
+    }
+
+    .support p {
+      color: var(--white);
+      font-weight: 500;
+      font-style: normal;
+      width: 45vw;
+      font-size: 2vw;
+      margin-left: 7vw;
+      margin-top: 260vw;
+    }
+    .some img {
+      position: absolute;
+      width: 8vw;
+      margin-top: 240vw;
+      z-index: 17; }
+
+    .insta {
+      margin-left: 62vw;
+    }
+    .facebook {
+      margin-left: 74vw;
+    }
+
+    .logofooter img {
+      position: absolute;
+      width: 30vw;
+      margin-top: 250vw;
+      margin-left: 57vw;
+      z-index: 17; }
+
+
+
+    } /* slut på web design størelse ____ end tag */
+
+
+
+/* CSS slut */
